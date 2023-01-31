@@ -13,19 +13,19 @@ public class Weissleder extends JuniorRobot
 	}
 	
 	public void movement() {
-            ahead(5);
-			turnGunLeft(15);
+         	ahead(5);
+		turnGunLeft(15);
 	}
 	
 	public void onScannedRobot() {
 		turnGunTo(scannedAngle);	
 		if(scannedDistance<200){
-        fire(1);
-       }
+        		fire(1);
+       		}
 	}
 	
 	public void onHitByBullet() {
-	    turnRight(10);
+	 	turnRight(10);
 		back(100);
 	}
 	
